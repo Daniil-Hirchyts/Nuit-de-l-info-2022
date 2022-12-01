@@ -1,8 +1,7 @@
-#draggable-elem {
+#draggable-elem, #contraception {
     font-weight: 700 !important;
     font-size: 1em !important;
 }
-
 #container {
     height: 100px;
     width: 100px;
