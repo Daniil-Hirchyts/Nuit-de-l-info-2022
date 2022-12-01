@@ -1,0 +1,115 @@
+.line-box-text.s1 {
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.line-box-text.box-2.s1 {
+    justify-content: flex-start;
+}
+
+.multi-tabs {
+    /*padding-top: 60px;*/
+    padding-bottom: 60px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%);
+}
+
+.multi-tabs h3 {
+    font-size: min(20vw, 30px);
+    font-weight: 500;
+    margin: 0 !important;
+    padding-bottom: 20px;
+}
+
+.multi-tabs p {
+    font-size: min(20vw, 20px);
+    font-weight: 400;
+    margin: 0 !important;
+}
+
+.multi-tabs .container {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    width: 80%;
+
+}
+
+.multi-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.multi-tab > div {
+    border-radius: 30px;
+    box-shadow: 7px 7px 15px rgb(55 84 170 / 15%), -7px -7px 20px rgb(255 255 255), inset 0 0 4px rgb(255 255 255 / 20%), inset 7px 7px 15px rgb(55 84 170 / 10%), inset -7px -7px 20px rgb(255 255 255 / 10%), 0 0 4px rgb(255 255 255 / 10%);
+    transition: box-shadow .25s ease !important;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.multi-tab > div:not(.m3 > div) {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgb(223, 233, 255) 13%, rgba(255, 255, 255, 1) 85%, rgb(223, 233, 255) 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.multi-tab.m1 > div:nth-child(1) {width: 66%;}
+.multi-tab.m1 > div:nth-child(2) {
+    background-image: url("/assets/images/gradient-5.jpg");
+    background-size: cover;
+    width: 33%;}
+.multi-tab.m2 > div:nth-child(1) {
+    background-image: url("/assets/images/gradient-7.jpg");
+    background-size: cover;
+    width: 50%;}
+
+.multi-tab.m2 > div:nth-child(2) {width: 50%;}
+
+.multi-tab.m2 > div:nth-child(1):hover, .multi-tab.m1 > div:nth-child(2):hover {
+    box-shadow: 1px 1px 3px rgb(55 84 170 / 15%), -2px -2px 5px rgb(255 255 255), inset 0 0 4px rgb(255 255 255 / 20%), inset 7px 7px 15px rgb(55 84 170 / 10%), inset -7px -7px 20px rgb(255 255 255 / 10%), 0 0 4px rgb(255 255 255 / 10%);
+    transition: box-shadow .25s ease !important;
+}
+.multi-tab.m3 > div {
+    background: url("/assets/images/test-image-2.png");
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+
+
+/*TODO !------------------MEDIA QUERIES------------------!*/
+
+@media (max-width: 768px) {
+    .multi-tabs .container {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .multi-tab {
+        flex-direction: column;
+    }
+    .multi-tab > div {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+
+
+
