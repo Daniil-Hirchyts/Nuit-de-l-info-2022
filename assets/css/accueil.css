@@ -281,6 +281,11 @@
     width: 50%;
 }
 
+.wrap{
+    font-size: 50px !important;
+}
+
+
 /*TODO !------------------MEDIA QUERIES------------------!*/
 
 @media (max-width: 768px) {
