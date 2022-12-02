@@ -50,9 +50,12 @@
 }
 
 .header, .boxes {
-    padding-top: 50px;
     padding-bottom: 110px;
     margin-bottom: 0;
+}
+
+.boxes {
+    padding-top: 50px;
 }
 
 .container-line {
@@ -202,10 +205,11 @@
     flex-direction: column;
     text-align: center;
     width: 33%;
+    cursor: pointer;
 }
 
 #boxes-t2 {
-    padding: 120px 0 50px 0 !important;
+    padding: 120px 0 120px 0 !important;
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(202, 180, 243, 0) 20%);
 }
@@ -220,69 +224,17 @@
     transition: box-shadow .25s ease !important;
 }
 
-.res {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 0 0 120px 0;
+#boxes-t2 {
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);
-}
-
-.logos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.logos img {
-    width: 50px;
-    height: 50px;
-    object-position: center;
-}
-
-.logos > div > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
-    -7px -7px 20px rgba(255, 255, 255, 1),
-    inset 0 0 4px rgba(255, 255, 255, .2),
-    inset 7px 7px 15px rgba(55, 84, 170, 0.1),
-    inset -7px -7px 20px rgba(255, 255, 255, 0.1),
-    0 0 4px rgba(255, 255, 255, 0.1) !important;
-    transition: box-shadow .25s ease !important;
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgb(223, 233, 255) 13%, rgba(255, 255, 255, 1) 85%, rgb(223, 233, 255) 100%);
-    border: 1px solid rgba(255, 255, 255, 1);
-}
-
-.logos > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    gap: 20px;
-}
-
-.res .container {
-    gap: 50px;
-    width: 50%;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%);
 }
 
 .wrap{
-    font-size: 50px !important;
+    font-size: min(10vw, 50px);
+}
+
+.typewriteDiv {
+    height: 220px;
 }
 
 
@@ -315,6 +267,10 @@
         text-align: center;
         padding: 20px 0 0 0;
 
+    }
+
+    .typewriteDiv {
+        height: 200px;
     }
 
     .header p {
