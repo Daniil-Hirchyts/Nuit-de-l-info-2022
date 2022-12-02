@@ -11,6 +11,7 @@
     height: 100%;
     width: 100%;
     padding-bottom: 100px;
+    background: linear-gradient(180deg, rgba(202, 180, 243, 0) 70%, rgba(255, 255, 255, 1) 100%);
 }
 
 .subtitre {
@@ -225,7 +226,7 @@ h2 {
 
 
 
-.sommaire, .middle-s, .six-box {
+.sommaire, .six-box {
     padding-bottom: 60px !important;
 }
 
@@ -263,29 +264,6 @@ h2 {
     align-content: center;
     width: 50%;
     overflow: hidden;
-}
-
-.middle {
-    border-radius: 30px;
-    padding: 20px;
-    width: 100%;
-    background: radial-gradient(circle, rgb(223, 233, 255) 13%, rgba(255, 255, 255, 1) 85%, rgb(223, 233, 255) 100%);
-    border: 1px solid rgba(255, 255, 255, 1);
-    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0 0 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0.1), inset -7px -7px 20px rgba(255, 255, 255, 0.1), 0 0 4px rgba(255, 255, 255, 0.1) !important;
-}
-
-.middle p {
-    padding-bottom: 20px;
-}
-
-.middle-s {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%);
-    padding-top: 25px;
-}
-
-.middle-s .container {
-    gap: 20px;
 }
 
 .citation {
@@ -339,9 +317,12 @@ h2 {
     justify-content: center;
     align-content: center;
     width: 50%;
+    border-radius: 30px;
+
 }
 
 .line-box-image img {
+    border-radius: 30px;
 }
 
 
@@ -355,11 +336,6 @@ h2 {
 
     .sommaire {
         display: none;
-    }
-
-    .titre-section {
-        background: linear-gradient(180deg, rgba(202, 180, 243, 0) 70%, rgba(255, 255, 255, 1) 100%);
-        padding-bottom: 50px;
     }
 
     .box {
@@ -407,11 +383,8 @@ h2 {
         padding-bottom: 25px !important;
     }
 
-    .middle-s {
-        padding-top: 50px;
-    }
 
-    .six-box .container h2, .middle-s .container h2 {
+    .six-box .container h2, .container h2 {
         font-size: min(20vw, 35px);
     }
 }
